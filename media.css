@@ -76,6 +76,16 @@
     left: 30px;
     top: 100px;
   }
+  /* swiper */
+  .swiper .text {
+    position: absolute;
+    font-size: 1.8rem;
+    width: 60%;
+    left: 20%;
+    top: 45%;
+    font-weight: bold;
+    word-spacing: 5px;
+  }
   /* about */
   #about .about-text {
     width: 100%;
