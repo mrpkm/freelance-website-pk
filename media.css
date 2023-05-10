@@ -1,4 +1,4 @@
-@media (max-width: 950px) {
+@media (max-width: 1250px) {
   /* header */
   #head-top {
     display: none;
@@ -8,12 +8,31 @@
     top: 0px;
     padding: 0 20px;
   }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .swiper-container {
+    height: 60vh;
+  }
+  .targets .images {
+    width: 100%;
+  }
+  .targets .targets-contant {
+    width: 100%;
+  }
+  .swiper-button-next::after {
+    font-size: 1.5rem;
+  }
+  .swiper-button-prev::after {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 700px) {
-  html {
+@media (max-width: 900px) {
+  /* html {
     font-size: 60%;
-  }
+  } */
 
   /* navbar */
   #menu-bars {
@@ -34,20 +53,6 @@
     right: 0rem;
     transition: 0.4s;
   }
-
-  /* .nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(223, 225, 219);
-    overflow: hidden;
-    border: 1px solid red;
-  }
-  .nav ul li {
-    border: 1px solid black;
-    text-align: center;
-    width: 100%;
-  } */
   .nav a {
     color: black;
     display: block;
@@ -66,7 +71,7 @@
   }
   /* swiper */
   .swiper-container {
-    height: 60vh;
+    height: 50vh;
   }
 
   .swiper .text {
@@ -112,4 +117,20 @@
   .about-tag ul {
     padding: 0;
   }
+  .all-process {
+    flex-direction: column;
+  }
+  .process .images::after {
+    display: none;
+  }
 }
+@media (max-width: 580px) {
+  .swiper-container {
+    height: 50vh;
+  }
+}
+/* @media (max-width: 430px) {
+  html {
+    font-size: 55%;
+  }
+} */

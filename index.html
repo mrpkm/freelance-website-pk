@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- swiper css2======================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/c008bbf441.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -21,19 +24,36 @@
     <header>
         <div id="head-top">
             <div class="details">
-                <span class="first-icon"><i class="fa-solid fa-plane"></i></span>
-                <span class="address">Address of the office </span>
-                <span class="mobile-no fa-sharp fa-solid fa-phone 	"> &nbsp; 254896756</span>
+                <div class="default-content" id="default-content">
+                    <span class="first-icon"><i class="fa-solid fa-plane"></i></span>
+                    <span class="address">Gandhi Maidan Dumka </span>
+                    <span id="mobile-icon" class="mobile-no fa-sharp fa-solid fa-phone"> &nbsp; +91 8975412622</span>
+                </div>
+                <div class="content" id="content-option1">
+                    <span class="first-icon"><i class="fa-solid fa-plane"></i></span>
+                    <span class="address">Lalpur Road Ranchi</span>
+                    <span class="mobile-no fa-sharp fa-solid fa-phone 	"> &nbsp; +91 8659754125</span>
+                </div>
+                <div class="content" id="content-option2">
+                    <span class="first-icon"><i class="fa-solid fa-plane"></i></span>
+                    <span class="address">Cv Raman Road Bengaluru </span>
+                    <span class="mobile-no fa-sharp fa-solid fa-phone"> &nbsp; 9874569813</span>
+                </div>
+                <div class="content" id="content-option3">
+                    <span class="first-icon"><i class="fa-solid fa-plane"></i></span>
+                    <span class="address">Laxmi Nagar Delhi </span>
+                    <span class="mobile-no fa-sharp fa-solid fa-phone 	"> &nbsp; 6325986574</span>
+                </div>
             </div>
-            <select class="drop-down" name="" id="">
-                <option value="">address</option>
-                <option value="11111">11111</option>
-                <option value="2222">2222</option>
-                <option value="33333">3333</option>
-                <option value="4444">4444</option>
-                <option value="5555">5555</option>
+            <select name="options" class="drop-down" id="options-select">
+                <option value="default">Dumka</option>
+                <option value="option1">Ranchi</option>
+                <option value="option2">Bengaluru</option>
+                <option value="option3">Delhi</option>
             </select>
-            <div class="fa-solid fa-bars-staggered toggle"></div>
+        </div>
+
+        <div class="fa-solid fa-bars-staggered toggle"></div>
 
 
         </div>
@@ -41,14 +61,14 @@
     </header>
     <nav class="navbar" id="navbar">
         <div class="logo">
-            <img src="/img/logo.png">
+            <img src="./img/logo.png">
         </div>
         <div class="nav">
-            <a href="">Home</a>
-            <a href="">Service</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Carrer</a>
+            <a href="homw">Home</a>
+            <a href="service">Service</a>
+            <a href="about">About</a>
+            <a href="contact">Contact</a>
+            <a href="carrer">Carrer</a>
         </div>
         <div class="icons">
             <div id="menu-bars" class="fas fa-bars"></div>
@@ -65,7 +85,7 @@
                         saepe hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut possimus vero et?
                         Quos vitae
                     </span>
-                    <span><img src="/img/sw1.jpg" alt=""></span>
+                    <span><img src="./img/sw1.jpg" alt=""></span>
                 </div>
                 <div class="swiper-slide">
                     <span class="text">
@@ -73,7 +93,7 @@
                         dignissimos
                         atque, ipsum aperiam ex deleniti rerum id sit quibusdam! -->
                     </span>
-                    <span><img src="/img/sw2.png" alt=""></span>
+                    <span><img src="./img/sw2.png" alt=""></span>
                 </div>
                 <div class="swiper-slide">
                     <span class="text">
@@ -81,7 +101,7 @@
                         optio minus,
                         voluptas id eos e. -->
                     </span>
-                    <span><img src="/img/sw3.png" alt=""></span>
+                    <span><img src="./img/sw3.png" alt=""></span>
                 </div>
             </div>
             <!-- If we need pagination -->
@@ -119,12 +139,236 @@
             </div>
         </div>
         <div class="about-img">
-            <img src="/img/about.png" alt="">
+            <img src="./img/about.png" alt="">
         </div>
     </section>
-    <section id="contact">
 
+
+    <!-- check it out -->
+    <section class="check">
+        <div class="headling">
+            <h4>How It Work</h4>
+            <h1>Check Out Our Work Process</h1>
+        </div>
+        <!-- ----------------- -->
+        <div class="all-process">
+            <div class="process">
+                <div class="image images">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Choose a Service</h2>
+                    <p>A commitment to quality and generation of value</p>
+                </div>
+            </div>
+            <!-- ----------------- -->
+            <div class="process">
+                <div class="image images">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Choose a Service</h2>
+                    <p>A commitment to quality and generation of value</p>
+                </div>
+            </div>
+            <!-- ----------------- -->
+            <div class="process">
+                <div class="image images">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Choose a Service</h2>
+                    <p>A commitment to quality and generation of value</p>
+                </div>
+            </div>
+            <!-- ----------------- -->
+            <div class="process">
+                <div class="image">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Choose a Service</h2>
+                    <p>A commitment to quality and generation of value</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- -------------- -->
+
+
+    <!-- ----------- -->
+
+    <section class="targets">
+        <div class="images">
+            <img src="img/single_03.png" alt="">
+        </div>
+        <div class="targets-contant">
+            <div class="headling">
+                <h4>targets</h4>
+                <h1>Our Mission & Vision</h1>
+            </div>
+            <p>TECHVIRA IT SOLUTIONS mission is to enhance the business operation of its clients by developing and/or
+                implementing premium IT products and services.</p>
+            <br>
+            <ul>
+                <h1>TECHVIRA IT SOLUTIONS mission includes:</h1>
+                <ol>1. Providing high quality software development services, professional consulting and development
+                    outsourcing that would improve our customers’ operations;</ol>
+                <ol>2. Develop elegant and affordable web solutions that enable small to large businesses to establish
+                    visibility online, increase sales, and improve productivity.</ol>
+                <ol>3. Making access to information easier and securer (Enterprise Business);</ol>
+                <ol>4. Improving communication and data exchange (Business to Business); </ol>
+            </ul>
+            <ul>
+                <h1>Our Strengths</h1>
+                <li>Single point of contact for all your need</li>
+                <li>A commitment to quality and generation of value</li>
+                <li>A domain knowledge pool across multiple business domains</li>
+                <li>Competitive pricing and supports</li>
+                <li>Continuous upgrade to new and emerging technologies</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- card -->
+    <section class="service">
+        <div class="headling">
+            <h4>Our Services</h4>
+            <h1>We run all kinds of services in form of</h1>
+            <h2>Information & Technologies</h2>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="/img/sw1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/sw1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/sw1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="/img/sw1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/sw1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/sw1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links ">
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">UI Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Video Editor</a></li>
+                        <li><a href="#">Theme Creator</a></li>
+                        <li><a href="#">Templates</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contribute</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="small">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-12">
+                    <p class="copyright-text">Copyright © 2020 All Rights Reserved by
+                        <a href="#"><span class="logo">Mr Pk</span></a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -50,3 +50,32 @@ menu.addEventListener('click', function () {
   nav.classList.toggle('active');
 })
 
+
+// ---------------------
+var optionsSelect = document.getElementById('options-select');
+var defaultContent = document.getElementById('default-content');
+var contentOption1 = document.getElementById('content-option1');
+var contentOption2 = document.getElementById('content-option2');
+var contentOption3 = document.getElementById('content-option3');
+
+optionsSelect.addEventListener('change', function () {
+  var selectedOption = optionsSelect.value;
+  hideAllContent();
+  if (selectedOption === 'default') {
+    defaultContent.style.display = 'block';
+  } else if (selectedOption === 'option1') {
+    contentOption1.style.display = 'block';
+  } else if (selectedOption === 'option2') {
+    contentOption2.style.display = 'block';
+  } else if (selectedOption === 'option3') {
+    contentOption3.style.display = 'block';
+  }
+});
+
+function hideAllContent() {
+  defaultContent.style.display = 'none';
+  contentOption1.style.display = 'none';
+  contentOption2.style.display = 'none';
+  contentOption3.style.display = 'none';
+}
+
