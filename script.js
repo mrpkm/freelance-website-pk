@@ -1,5 +1,5 @@
 
-console.log("object")
+
 // this is a swiper js=======================
 const swiper = new Swiper(".swiper", {
   autoplay: {
@@ -78,4 +78,7 @@ function hideAllContent() {
   contentOption2.style.display = 'none';
   contentOption3.style.display = 'none';
 }
+
+
+
 
